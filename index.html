@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>InicioApl2</title>
+
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js"crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <video id="videoBG" poster="img/imapl.png" autoplay muted loop>
+        <source src="fondo.mp4" type="video/mp4">
+
+    </video>
+
+    <div class="all">
+        <div class="encab">
+            <div class="imapl">
+                <img src="img/APL.png " width="165px">
+            </div>
+           
+            <div class="inicio">
+                <img class="icono" src="img/iconoPer2.png" width="49px">
+                <button type="click" class="btn__inicio">Iniciar Sesión</button>
+            </div>
+        </div> 
+        
+    
+        <div class="container">
+    
+            <div class="imaFact">
+                <img src="img/FactElec1.png" width="90%">
+            </div>
+            
+            <div class="datos">
+                <div class="titulos">
+                    <h2 class="titulo1">Ingresa tus datos</h2>
+                    <h3 class="titulo2">Nos contactaremos contigo</h3>
+                </div>
+                
+                <form action="" class="formulario_inicioAPL" id="formulario_inicioAPL">
+                    <!--Grupo nombre-->
+                    <div class="formulario__grupo" id="grupo__nombre">
+                        <label for="nombre" class="formulario__label">Nombre</label>
+                        <div class="formulario__grupo-input">
+                            <input class="formulario_input" type="text" name="nombre" id="nombre" placeholder="">
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                        </div>
+                        <p class="formulario__input-error">Nombre no valido, solo puede contener letras</p>
+            
+                        <p class="formulario__input-errorn">Esta casilla es obligatoria</p>
+                    </div>
+                    <!--Grupo apellidos-->
+                    <div class="formulario__grupo" id="grupo__apellido">
+                        <label for="apellido" class="formulario__label"><b>Apellidos</b></label>
+                        <div class="formulario__grupo-input">
+                            <input class="formulario_input" type="text" name="apellido" id="apellido" placeholder="">
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                        </div>
+                        <p class="formulario__input-error">Apellido no valido, solo puede contener letras</p>
+            
+                        <p class="formulario__input-errorn">Esta casilla es obligatoria</p>
+                    </div>
+    
+                     <!--Grupo nombre empresa-->
+                     <div class="formulario__grupo" id="grupo__empresa">
+                        <label for="empresa" class="formulario__label"><b>Nombre de la empresa</b></label>
+                        <div class="formulario__grupo-input">
+                            <input class="formulario_input" type="text" name="empresa" id="empresa" placeholder="">
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                        </div>
+                        <p class="formulario__input-error">Nombre de empresa no valido, solo puede contener letras</p>
+            
+                        <p class="formulario__input-errorn">Esta casilla es obligatoria</p>
+                    </div>
+    
+                     <!--Grupo numero de empleados-->
+                     <div class="formulario__grupo" id="grupo__empleados">
+                        <label for="empleados" class="formulario__label"><b>Número de empleados</b></label>
+                        <div class="formulario__grupo-input">
+                            <input class="formulario_input" type="text" name="empleados" id="empleados" placeholder="">
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                        </div>
+                        <p class="formulario__input-error">Solo puede contener números</p>
+            
+                        <p class="formulario__input-errorn">Esta casilla es obligatoria</p>
+                    </div>
+    
+                     <!--Grupo telefono-->
+                     <div class="formulario__grupo" id="grupo__telefono">
+                        <label for="telefono" class="formulario__label"><b>Teléfono</b></label>
+                        <div class="formulario__grupo-input">
+                            <input class="formulario_input" type="text" name="telefono" id="telefono" placeholder="">
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                        </div>
+                        <p class="formulario__input-error">El teléfono solo puede contener números y el máximo son 10 dígitos</p>
+                    </p>
+            
+                        <p class="formulario__input-errorn">Esta casilla es obligatoria</p>
+                    </div>
+    
+                     <!--Grupo correo-->
+                     <div class="formulario__grupo" id="grupo__correo">
+                        <label for="correo" class="formulario__label"><b>Correo</b></label>
+                        <div class="formulario__grupo-input">
+                            <input class="formulario_input" type="email" name="correo" id="correo" placeholder="">
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                        </div>
+                        <p class="formulario__input-error">Correo no válido</p>
+            
+                        <p class="formulario__input-errorn">Esta casilla es obligatoria</p>
+    
+                    </div>
+    
+                    <!--Grupo error enviado-->
+                    <div class="formulario__mensaje" id="formulario__mensaje">
+                        <p><i class="fas fa-exclamation-triangle"></i><b> Error: </b>Por favor ingresar la información correctamente</p>
+                    </div>
+    
+                    <!--Grupo boton-->
+            
+                    <div class="formulario__grupo formulario__grupo-btn-enviar">
+                        <button type="click" class="fomulario__btn">Registrar</button>
+                        <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente</p>
+                    </div>
+    
+                </form>
+            </div>
+        </div>
+        
+    </div>
+    
+    <footer>
+        <div class="final">
+            <div class="copy">
+                <p>Copyright © 2021 · Grupo APL ingeniería · Software | Todos los derechos reservados</p>
+            </div>
+           
+            <div class="link">
+
+                <div class="linkAPL">
+                    <div class="pagweb">
+                        <img src="img/pagw.png" width="50px">
+                    </div>
+    
+                    <div class="pag">
+                        <p><a href="http://www.apl.com.co">www.apl.com.co</a></p>
+                    </div>
+                </div>
+    
+                <div class="redes">
+                    <a href="https://wa.me/573134338842">
+                        <img class="wapp" src="img/wapp.png"  width="48px">
+                    </a>
+    
+                    <a href="https://www.facebook.com/aplcolombia">
+                        <img class="fc" src="img/fc.png"  width="48px">
+                    </a>
+                    <a href="https://www.google.com/maps/place/Grupo+APL+Ingeniería+Ltda./@7.1016743,-73.1163961,17z/data=!3m1!4b1!4m5!3m4!1s0x8e683fc05f3708a5:0x5e86c7d59758f5f2!8m2!3d7.101669!4d-73.114202?hl=es">
+                        <img class="maps" src="img/maps.png"  width="48px">
+                    </a>
+    
+                </div>
+                
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="main.js"></script> 
+</body>
+</html>

@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+video{
+    width: 100%;
+    margin-bottom: -15px;
+  
+
+ 
+}
+
+.all{
+    width:100%;
+    /* height: 100%; */
+    top:0;
+    
+    position: absolute;
+ 
+
+}
+/*********************************************************Ecabezado*******************************************/
+
+.encab{
+    width: 95%;
+    height: 90px;
+    top: 29px;
+    background:#2A2B2C;
+
+    margin-top:0px;
+    margin-right:auto;
+    margin-bottom:20px;
+    margin-left:auto;
+}
+.btn__inicio{
+    float: right;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 23px;
+    border: none;
+    background: white;
+    cursor: pointer;
+
+   
+    color: #000000;
+    border-radius: 5px;
+    height: 37px;
+    width: 156px;
+ 
+    top: 56px;
+    padding-top: 8px;
+
+    margin-top:20px;
+    margin-right: 8px;
+    margin-bottom:20px;
+    margin-left:auto;
+    
+
+    display: flex;/**************************************/
+    justify-content: center; /*Centrar el imagen de apl*/
+}
+
+.btn__inicio:hover{
+    background-color:rgb(164, 164, 206);
+}
+
+.imapl{
+    position: absolute;
+    width: 144px;
+    height: 83px;
+    left: 70px;
+
+}
+.icono{
+    width: 49px;
+    height: 45px;
+    
+    top: 48px;   
+    float: right;
+
+    margin-top:15px;
+    margin-right:auto;
+    margin-bottom:0px;
+    margin-left:auto;
+}
+.inicio{
+    
+    margin-right: 10px;
+}
+
+
+
+/**************************************************************cuerpo**************************************/
+.titulo1{
+    display: flex;/**************************************/
+    justify-content: center; /*Centrar el imagen de apl*/
+    align-items:center;/*********************************/
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 47px;
+    color: #000000;  
+}
+
+.titulo2{
+    display: flex;/**************************************/
+    justify-content: center; /*Centrar el imagen de apl*/
+    align-items:center;/*********************************/
+    font-family: Roboto;
+}
+
+.titulos{
+    margin-top:25px;
+    margin-bottom: 20px;
+    font-family: Rock Salt;
+}
+
+.container{
+   
+    display:grid;
+    grid-template-columns: 1fr 1fr;/*ubicarlo en columnas*/
+    gap:0px;/*Espacio entre los elementos*/
+  
+    width: 75%;
+    height: auto;
+    left: 200px;
+    top: 178px;
+
+    display: flex;/**************************************/
+    justify-content: center; /*Centrar el imagen de apl*/
+
+    background: #283c74;
+
+    margin-top:25px;
+    margin-right:auto;
+    margin-bottom:0px;
+    margin-left:auto;
+
+    opacity: 0.89;
+}
+
+.datos{
+    background: #FFFCFC;
+  
+    width: 90%;
+    height: auto;
+    left: 875px;
+    top: 212px;  
+
+    margin-top:25px;
+    margin-right:25px;
+    margin-bottom:25px;
+    margin-left:25px;
+
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.imaFact{
+    background: #FFFCFC;
+    width: 100%;
+
+    display: flex;/**************************************/
+    justify-content: center; /*Centrar el imagen de apl*/
+    align-items:center;/*********************************/
+
+}
+
+.formulario_inicioAPL{
+    display:grid;
+    grid-template-columns: 3fr 3fr;/*ubicarlo en columnas*/
+    gap:20px;/*Espacio entre los elementos*/
+ 
+}
+
+.formulario__label{/*Caracteristicas de los titulos*/
+    display:block;
+    font: weight 5000;
+    padding:10px;
+    cursor:pointer;
+    font-family: Roboto;
+    font-weight: bold;
+ 
+    /*color:rgb(205, 115, 92);*/
+}
+.formulario__input-correcto,
+.formulario_input{
+    width:100%;
+    border: 3px solid transparent;
+    border-radius:3px;
+    margin-bottom: 8px;/*separacion de los textos*/
+    background: #EDEBEB;
+    
+   
+    font-family: 'calibri';
+    font-size:18px;
+    color:black; /*Color del texto al escribir*/
+    height: 45px;
+    line-height:45;
+    transition: .3s ease all;
+    border-radius: 4px;
+}
+
+
+
+.formulario__grupo-input{
+    position: relative;
+}
+
+.formulario__validacion-estado{/*Simbolos de error*/
+    position:absolute;
+    right:10px;
+    bottom:20px;
+    z-index:100;
+    font-size:16px;
+    opacity:0;
+}
+
+.formulario__input-error{/*Error en la casilla*/
+    font-size:12px;
+    margin-bottom:0;
+    display:none;
+} 
+
+.formulario__input-errorn{/* Cuando la casilla esta vacia*/
+    font-size:12px;
+    margin-bottom:0;
+    display:none;
+} 
+
+.formulario__input-error-activo {
+    display:block;
+}
+
+.formulario__input-errorn-activo {
+    display:block;
+}
+
+.formulario__mensaje{
+    width: 420px;
+    height:45px;
+    line-height: 45px;
+    background: #F66060;
+    padding: 0 15px;
+    border-radius: 3px;
+    display:none;
+} 
+
+.formulario__mensaje-activo{
+    display: block;
+}
+
+.formulario__mensaje-exito{
+    font-size:14px;
+    color: #119200;
+    display: none;
+}
+
+.formulario__mensaje-exito-activo{
+    display:block;
+}
+
+
+.formulario__mensaje,
+.formulario__grupo-btn-enviar{/*hace que el mensaje de error, el boton y el mensaje de enviado no queden en columnas */
+    grid-column: span 2;
+}
+
+.formulario__mensaje
+{
+    margin-top:15px;
+    margin-right:auto;
+  
+    margin-left:auto;
+}
+
+.formulario__grupo-btn-enviar{
+
+    margin-right:auto;
+    margin-bottom:10px;
+    margin-left:auto;
+}
+
+.fomulario__btn{
+    width:100%;
+    background: #1f53c5;
+    border: none;
+    padding:12px;
+    color:white;
+    margin: 16px 0;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 3px;
+    border :0;
+}
+
+.fomulario__btn:hover{
+    background-color: #14929b; /*Hace que cambie de color cuando el cursor esté sobre el boton*/
+    color:black;
+}
+
+.formulario__grupo-correcto .formulario__validacion-estado{/*cambia el color de la X cuando esta correcto*/
+    color:#1ed12d;
+    opacity:1;
+}
+.formulario__grupo-incorrecto .formulario__label{ /*cambia el color del nombre cuando es incorrecto*/
+    color: #bb2929;
+}
+
+.formulario__grupo-incorrecto .formulario__validacion-estado{/*cambia el color de la X cuando esta incorrecto*/
+    color:#bb2929;
+    opacity:1;
+}
+
+.formulario__grupo-incorrecto .formulario_input{/*cambia el color del recuadro cuando esta incorrecto*/
+    border: 1px solid #bb2929;
+}
+
+/*********************************************************************final***********************************/
+
+footer{
+    background:#2A2B2C;
+    color: white;
+    height: 95px;
+    width: 100%;
+    margin-top:10px;
+    /* position:fixed; */
+    position: absolute;
+
+    text-align: center ;
+    clear: both; /*El footer no interfiere con los demas elementos*/
+    /* z-index: 100; /*Las X no aparecen sobre el footer*/
+} 
+
+.link a{
+    color:white;
+    text-decoration:none; 
+}
+
+.link{
+   
+    display:grid;
+    grid-template-columns: 1fr 1fr;/*ubicarlo en columnas*/
+    gap:0px;/*Espacio entre los elementos*/
+    width: 500px;
+    margin:auto;
+    margin-top: 10px;
+}
+.linkAPL{
+    width: 200px;
+    right: 200px;
+}
+.copy{
+    margin-top: 10px;
+    font-family: Mada;
+}
+
+.wapp,
+.fc,
+.maps{
+    margin-right:8px ;
+}
+
+.pagweb{
+    float:left;
+}
+
+.pag{
+    float:letf;
+    top:20px;
+}
